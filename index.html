@@ -13,12 +13,6 @@
             background: #f4f4f4;
             scroll-behavior: smooth;
         }
-        @media only screen and (max-width: 455px) {
-    body {
-        flex-direction: column;
-    }
-}
-
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -355,16 +349,87 @@ footer {
     color: #f96d00;
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-section {
-        margin-bottom: 20px;
-    }
-}
+@media (max-width: 1024px) {
+       .feature {
+           width: 45%;
+       }
+
+       .option {
+           width: 100%;
+           margin-bottom: 20px;
+       }
+
+       .city {
+           width: 45%;
+       }
+   }
+
+   @media (max-width: 768px) {
+       .navbar {
+           flex-direction: column;
+           align-items: flex-start;
+       }
+
+       .navbar a {
+           padding: 10px 15px;
+       }
+
+       .hero h1 {
+           font-size: 3em;
+       }
+
+       .trip {
+           flex: 0 0 30%;
+       }
+
+       .cities {
+           height: auto;
+           padding: 2em;
+           margin-top: 100px;
+       }
+
+       .city {
+           width: 100%;
+           margin: 10px 0;
+       }
+
+       .travel-options {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .option {
+           width: 90%;
+       }
+   }
+
+   @media (max-width: 600px) {
+       .hero h1 {
+           font-size: 2.5em;
+       }
+
+       .feature, .city {
+           width: 100%;
+       }
+
+       .trip {
+           flex: 0 0 45%;
+       }
+
+       .footer-container {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .footer-section {
+           width: 100%;
+           text-align: center;
+       }
+
+       .footer-section form {
+           align-items: center;
+       }
+   }
 
 
     </style>

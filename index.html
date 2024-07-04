@@ -13,6 +13,11 @@
             background: #f4f4f4;
             scroll-behavior: smooth;
         }
+        @media only screen and (max-width: 455px) {
+    body {
+        flex-direction: column;
+    }
+}
 
         .navbar {
             display: flex;
@@ -92,11 +97,7 @@
             from { transform: scale(0.5); }
             to { transform: scale(1); }
         }
-        @media (max-width: 768px) {
-    hero {
-        flex-direction: column;
-    }
-}
+    
 
         .content {
             padding: 2em;
